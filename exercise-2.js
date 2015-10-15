@@ -249,12 +249,12 @@ var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
 
-var addNumbers = function(A, B) {
-return(A + B);
+var addNumbers = function(numberA, numberB) {
+return(numberA + numberB);
 };
 
 var twoPlusTwo = addNumbers(2,2);
-// call it with twoPlusTwo --- should return 4
+// call it with twoPlusTwo --- should return 4   (was undefined because it was printing with a console.log. return will define it.)
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -276,11 +276,26 @@ var speed = 0;
 
 var accelerate = function(amount) {
   speed += amount;
+// return speed
+};
+// accelerate() to call
+// Put your answer below -------------------------
+There was no numeric value available for 'amount'. 
+
+var speed = 0;
+
+var accelerate = function(amount) {
+ if(isNaN(amount)){
+   speed = 1;
+ }
+ else {
+   speed +=amount;
+ }
+ return speed;
 };
 
-// Put your answer below -------------------------
 
-"amount" is not a number.
+
 
 
 // -----------------------------------------------

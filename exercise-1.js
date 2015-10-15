@@ -20,6 +20,9 @@ console.log(sum(8, 11));
  * Write a JavaScript program that calculates the average time for this marathoner to complete the full marathon (26.2mi)
  */
 
+
+
+
 var matt = {
     finishingTime1: 240, //in minutes
     finishingTime2: 210.4,
@@ -28,12 +31,13 @@ var matt = {
     finishingTime5: 197.5,
     finishingTime6: 227.4
 };
-num = Object.keys(matt);
 
-for (i=0; i<=num.length;i++) {
-  var key = num [i]
-  return (matt [key]);
-};
+// num = Object.keys(matt);
+//
+// for (i=0; i<=num.length;i++) {
+//   var key = num [i]
+//   return (matt [key]);
+// };
 
 var mark = {
     finishingTime1: 120, //in minutes
@@ -43,9 +47,32 @@ var mark = {
     finishingTime5: 97.5
 };
 
+// var getAverageTime = function(person) {
+//  var avg=0;
+//  var inc=0;
+// for (var i in person) {
+//   // if (person.hasOwnProperty(i)) {
+//       avg +=  person[i];
+//      console.log(person[i]);
+//      inc++;
+//  // }
+// }
+//  avg= avg/inc;
+// return avg;
+// }
+
+// answer:
+
 var getAverageTime = function(person) {
-    "use strict";
-    // ... return ...
+    var avg = 0;
+    var inc = 0;
+    for (var i in person) {
+      avg += person[i];
+      console.log(person[i]);
+      inc++;
+    }
+    avg = avg/inc;
+    return avg;
 }
 
 console.log(getAverageTime(matt));
@@ -75,8 +102,11 @@ var RobertosBankAccount = {
     retirement: 0
 };
 
+
+
 function addToBank(account, savings, retirement, checking) {
     "use strict";
+
     account.savings = account.savings + savings;
     account.retirement = account.retirement + retirement;
     account.checking = account.checking + checking;
@@ -84,11 +114,21 @@ function addToBank(account, savings, retirement, checking) {
 
 function getSumOfAccounts(account) {
     "use strict";
-    // return ...
+    // return ...for
+    var sum = 0;
+    var inc = 0 ;
+    for (var i in account) {
+      sum += account[i];
+      console.log(account[i]);
+      inc++;
 }
-
+    sum = sum + inc;
+    return sum;
+}
 addToBank(MattsBankAccount, 100, 10, 1);
 addToBank(RobertosBankAccount, 200, 50, 19);
+
+
 
 var sumOfMatts = getSumOfAccounts(MattsBankAccount);
 var sumOfRobertos = getSumOfAccounts(RobertosBankAccount);
