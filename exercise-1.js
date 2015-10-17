@@ -32,13 +32,6 @@ var matt = {
     finishingTime6: 227.4
 };
 
-// num = Object.keys(matt);
-//
-// for (i=0; i<=num.length;i++) {
-//   var key = num [i]
-//   return (matt [key]);
-// };
-
 var mark = {
     finishingTime1: 120, //in minutes
     finishingTime2: 110.4,
@@ -47,19 +40,6 @@ var mark = {
     finishingTime5: 97.5
 };
 
-// var getAverageTime = function(person) {
-//  var avg=0;
-//  var inc=0;
-// for (var i in person) {
-//   // if (person.hasOwnProperty(i)) {
-//       avg +=  person[i];
-//      console.log(person[i]);
-//      inc++;
-//  // }
-// }
-//  avg= avg/inc;
-// return avg;
-// }
 
 // answer:
 

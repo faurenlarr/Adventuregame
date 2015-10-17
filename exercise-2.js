@@ -280,7 +280,7 @@ var accelerate = function(amount) {
 };
 // accelerate() to call
 // Put your answer below -------------------------
-There was no numeric value available for 'amount'. 
+There was no numeric value available for 'amount'.
 
 var speed = 0;
 
