@@ -185,14 +185,18 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
-var callNTimes = function (myNumber,callback) {
+var callNTimes = function (callback,myNumber){
   for(var i=0; i < myNumber; i++) {
-    console.log(callback());
+    callback();
   }
+};
+// to call ----
 
-}
-// to call ---- callNTimes(3,function() { console.log ("hey");})
+var hey = function(){
+    console.log ("hey");
+  };
 
+callNTimes(3, hey);
 
 
 // -----------------------------------------------
@@ -280,7 +284,8 @@ var accelerate = function(amount) {
 };
 // accelerate() to call
 // Put your answer below -------------------------
-There was no numeric value available for 'amount'.
+
+// Speed is a number. When you try to add something that isnt a number, to a number, it will define as NaN. There was no numeric value available for 'amount', and it was being added to speed.
 
 var speed = 0;
 
